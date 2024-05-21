@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오늘의 메뉴 추천</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=u4nl6r24jx"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1><img src="kb_logo.png" width="1100"></h1>
+            <h1><img src="https://velog.velcdn.com/images/ssh991031/post/516381ec-abc4-4fce-9b1c-4387fcc32f31/image.jpg" width="1100"></h1>
         </header>
+        
         <button id="recommendBtn">어떤 메뉴 일까요?</button>
         <section id="randomMenu" class="menu-list" style="display: none;">
             <h2>추천 메뉴(음식점)</h2>
             <div class="menu-item" id="randomMenuItem"></div>
+            
         </section>
     </div>
-    <script src="getRestaurant.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
