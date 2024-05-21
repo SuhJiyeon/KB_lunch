@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KB Random Lunch Menu</title>
-    <script src="food.js"></script>
+    <title>오늘의 메뉴 추천</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
-        <h1>KB IT's Your Life 5기</h1>
-        <h1>오늘의 점심 메뉴 추천</h1>
-
-        <button id="menuButton" onclick="menu()">메뉴 추천 받기</button>
-        <div id="menuName" class="menu-Name"></div>
-        <div id="menuImage" class="menu-Image"></div>
-
+        <header>
+            <h1><img src="kb_logo.png" width="1100"></h1>
+        </header>
+        <button id="recommendBtn">어떤 메뉴 일까요?</button>
+        <section id="randomMenu" class="menu-list" style="display: none;">
+            <h2>추천 메뉴(음식점)</h2>
+            <div class="menu-item" id="randomMenuItem"></div>
+        </section>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
