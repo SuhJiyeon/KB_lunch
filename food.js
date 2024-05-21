@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const button = document.getElementById('generateButton');
-    const menuDisplay = document.getElementById('menuDisplay');
+    const menuName = document.getElementById('menuName');
 
     button.addEventListener('click', () => {
-        const randomMenu = menus[Math.floor(Math.random() * menus.length)];
-        menuDisplay.textContent = randomMenu;
+        const randomIndex = Math.floor(Math.random() * menus.length);
+        const randomMenu = menus[randomIndex];
     });
 });
