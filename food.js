@@ -7,8 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById('generateButton');
     const menuName = document.getElementById('menuName');
 
-    button.addEventListener('click', () => {
+    function menu() {
         const randomIndex = Math.floor(Math.random() * menus.length);
         const randomMenu = menus[randomIndex];
-    });
+        const menuName = document.getElementById('menuName');
+
+        return randomIndex;
+
+    }
 });
